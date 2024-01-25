@@ -128,6 +128,10 @@ This project is licensed under MIT License.
 <br>
 <br>
 <img width="349" alt="image" src="https://github.com/CasualClicks/tic-tac-toe/assets/63722402/07e5099d-80a9-4507-b0cb-1716af369c01">
+<br>
+<br>
+<img width="278" alt="image" src="https://github.com/CasualClicks/tic-tac-toe/assets/63722402/b2687a1c-1a43-403f-b11e-7756883745fd">
+
 
 
 
