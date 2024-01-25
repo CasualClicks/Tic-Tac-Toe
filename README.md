@@ -15,7 +15,7 @@ This is a simple console-based Tic-Tac-Toe game implemented in Java. The game is
 </ul>
 
 
-# How to Run
+# How to Run (Non-GUI version)
 <ol>
   <li>
     Clone the Repository to your local machine.
@@ -31,6 +31,30 @@ This is a simple console-based Tic-Tac-Toe game implemented in Java. The game is
     Run the JAR File
 
     java -jar TicTacToe.jar
+  </li>
+</ol>
+
+# How to Run (GUI Version)
+<ol>
+  <li>
+    Clone the Repository to your local machine.
+    
+    git clone https://github.com/CasualClicks/tic-tac-toe.git
+  </li>
+  <li>
+    Navigate to the project directory.
+
+    cd tic-tac-toe/
+  </li>
+  <li>
+    Compile the TicTacToeGUI.java file
+
+    javac TicTacToeGUI.java
+  </li>
+  <li>
+    Run the game
+
+    java TicTacToeGUI
   </li>
 </ol>
 
