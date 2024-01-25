@@ -254,7 +254,7 @@ class Game {
             want_to_continue = Character.toLowerCase(in.nextLine().charAt(0));
             System.out.println();
 
-            in.close();
         }
+        in.close();
     }
 }
