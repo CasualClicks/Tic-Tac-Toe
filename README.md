@@ -4,5 +4,5 @@ This repository contains code for a tic-tac-toe solver, that would always result
 
 TECH USED
 <ul>
-  Java SE 11
+  <li>Java SE 11</li>
 </ul>
