@@ -79,9 +79,9 @@ at the start of the game, the player get's to choose whether they would like to 
 
 # Future Enhancements
 <ul>
-  <li>
-    ~~A GUI for a more user friendly gameplay~~.
-  </li>
+  ~~<li>
+    A GUI for a more user friendly gameplay~~.
+  </li>~~
   <li>
     keeping statictical track of games
   </li>
