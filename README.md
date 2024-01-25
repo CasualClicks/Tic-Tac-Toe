@@ -110,6 +110,11 @@ at the start of the game, the player get's to choose whether they would like to 
     https://chat.openai.com/
   </li>
   <li>
+    GUI Version for TicTacToe also powered by ChatGPT
+
+    https://chat.openai.com/
+  </li>
+  <li>
     Backtracking
 
     https://www.geeksforgeeks.org/backtracking-algorithms/
