@@ -59,6 +59,35 @@ class Game {
         return false;
     }
 
+    // this funciton would be responsible for calculating machine's best move, after
+    // checking minimax algorithm's score on each empty cell where machine can make
+    // it's move
+    public static int bestMove(char board[][], int moveIndex) {
+        int x = -1;
+        int y = -1;
+        int score = 0;
+        int bestScore = Integer.MIN_VALUE;
+        for (int i = 0; i < SIDE; i++) {
+            for (int j = 0; j < SIDE; j++) {
+                // logic - if machine sees an empty space, it would make it's move there. now,
+                // based on minimax algorithm, it would find a score associated with that move.
+                // Machine would do so for each empty position and store that posiiton where it
+                // gets maximum score.
+                if (board[i][j] == '*') {
+                    board[i][j] = MachineMove;
+                    score = minimax(board, moveIndex + 1, false);
+                    board[i][j] = '*'; // changing that posiiton back to original 'empty' space
+                    if (score > bestScore) {
+                        bestScore = score;
+                        x = i;
+                        y = j;
+                    }
+                }
+            }
+        }
+        return x * 3 + y;
+    }
+
     public static void TicTacToe(int turn) {
         // Initializing a Scanner class object for taking inputs
         Scanner in = new Scanner(System.in);
@@ -75,8 +104,16 @@ class Game {
             int n; // this temp variable would be used to store the posiiton where the move is
                    // played.
             if (turn == MACHINE) {
-                // here, i would be later coding for machine logic, where my machine would be
-                // playing optimally
+                // this function would be responsible to calculate the best move that machine
+                // could make, on the basis of minimax algorithm
+                n = bestMove(board, moveIndex);
+                x = n / SIDE;
+                y = n % SIDE;
+                board[x][y] = MachineMove;
+                System.out.println("\nMachine marked " + MachineMove + " in cell " + n + 1);
+                showBoard(board);
+                moveIndex++;
+                turn = USER;
             } else if (turn == USER) {
                 // printing the open positions, where the user can play it's move
                 System.out.print("\nYou can insert in the following positions: ");
