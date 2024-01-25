@@ -101,5 +101,7 @@ This project is licensed under MIT License.
 
 # Related Images
 <img width="463" alt="image" src="https://github.com/CasualClicks/tic-tac-toe/assets/63722402/bd9c7e3a-df08-4ff7-946a-9045b715757a">
+<img width="349" alt="image" src="https://github.com/CasualClicks/tic-tac-toe/assets/63722402/07e5099d-80a9-4507-b0cb-1716af369c01">
+
 
 
