@@ -19,6 +19,6 @@ This is a simple console-based Tic-Tac-Toe game implemented in Java. The game is
 <ol>
   <li>
     Clone the Repository to your local machine.
-    `git clone https://github.com/CasualClicks/tic-tac-toe-java.git`
+    `git clone https://github.com/your-username/tic-tac-toe.git`
   </li>
 </ol>
