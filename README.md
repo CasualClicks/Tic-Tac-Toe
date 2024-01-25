@@ -34,3 +34,6 @@ This is a simple console-based Tic-Tac-Toe game implemented in Java. The game is
   </li>
 </ol>
 
+# How to Play
+Follow the ==On Screen Instructions== to play the game. Input your move by ==entering the cell number== where you want to make a move.
+
