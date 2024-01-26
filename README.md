@@ -1,4 +1,4 @@
-## Note: Follow my Sudoku Solver web application on:
+#Note: Follow my Sudoku Solver web application on: 
 ```https://github.com/CasualClicks/sudoku```
 
 # Tic-Tac-Toe
