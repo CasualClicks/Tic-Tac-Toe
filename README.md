@@ -1,4 +1,4 @@
-> Follow my __Sudoku Solver__ web application on: 
+> Follow my __Sudoku Solver__ development process on: 
 [Sudoku Solver](https://github.com/CasualClicks/sudoku)
 
 # Tic-Tac-Toe
