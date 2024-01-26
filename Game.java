@@ -185,26 +185,32 @@ class Game {
                         if (board[i][j] == '*')
                             System.out.print(((i * 3 + j) + 1) + " "); // converting index to posiiton
                 System.out.print("\nEnter the position: ");
-                n = in.nextInt();
-                n--; // because we are using 0-based indexing and user input is in 1-based indexing
-                x = n / SIDE; // calculating row on the basis of input
-                y = n % SIDE; // calculating column on the basis of input
 
-                // if entry is valid
-                if (board[x][y] == '*' && n < 9 && n >= 0) {
-                    board[x][y] = UserMove;
-                    System.out.println("\nUser marked " + UserMove + " in cell " + (n + 1));
-                    showBoard(board);
-                    moveIndex++;
-                    turn = MACHINE;
-                }
-                // else if user gives input location which is already occupied
-                else if (board[x][y] != '*' && n < 9 && n >= 0) {
-                    System.out.println("\nAlready occupied posiiton. Please select a valid position");
-                }
-                // else if user inputs cell value out of range
-                else if (n < 0 || n >= 9) {
-                    System.out.println("\nCell Range Invalid / Cell range out of bounds.");
+                try {
+                    n = in.nextInt();
+                    n--; // because we are using 0-based indexing and user input is in 1-based indexing
+                    x = n / SIDE; // calculating row on the basis of input
+                    y = n % SIDE; // calculating column on the basis of input
+
+                    // if entry is valid
+                    if (n < 9 && n >= 0 && board[x][y] == '*') {
+                        board[x][y] = UserMove;
+                        System.out.println("\nUser marked " + UserMove + " in cell " + (n + 1));
+                        showBoard(board);
+                        moveIndex++;
+                        turn = MACHINE;
+                    }
+                    // else if user gives input location which is already occupied
+                    else if (n < 9 && n >= 0 && board[x][y] != '*') {
+                        System.out.println("\nAlready occupied posiiton. Please select a valid position");
+                    }
+                    // else if user inputs cell value out of range
+                    else if (n < 0 || n >= 9) {
+                        System.out.println("\nCell Range Invalid / Cell range out of bounds.");
+                    }
+                } catch (InputMismatchException ex) {
+                    System.out.println("\nPlease enter valid Input.");
+                    in.nextLine();
                 }
             }
         }
