@@ -1,5 +1,8 @@
-> Follow my __Sudoku Solver__ development process on: 
-[Sudoku Solver](https://github.com/CasualClicks/sudoku)
+> Follow my __Sudoku Solver (Web)__ development process on: 
+[Javascript based Sudoku Solver](https://github.com/CasualClicks/sudoku)
+
+> Follow my __Sudoku Solver (Java)__ development process on:
+> [Java based Sudoku Solver](https://github.com/CasualClicks/sudoku_java)
 
 # Tic-Tac-Toe
 This is a simple console-based/GUI based Tic-Tac-Toe game implemented in Java. The game is designed in a way that the machine always beats the user or ends in a draw. The user can choose who plays first.
